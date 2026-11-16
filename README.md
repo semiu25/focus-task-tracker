@@ -1,30 +1,31 @@
-# Focus — Task Tracker
+# Focus Task Tracker
 
-A responsive task-tracking web app built with **HTML, CSS and vanilla JavaScript**.
+Focus Task Tracker is a responsive web application designed to help users organize, manage, and track their daily tasks.
 
 ## Features
-- Add tasks, mark them complete, and delete them
-- Filter tasks by All, To do, and Completed
-- Clear all completed tasks
-- Live task counters
-- Saves tasks in the browser with `localStorage`
-- Responsive layout for mobile and desktop
 
-## Run locally
-1. Download or clone this project.
-2. Open `index.html` in a modern browser.
-3. Add a task to try it out.
+- Add and manage daily tasks.
+- Track task completion.
+- Simple and user-friendly interface.
+- Responsive design.
 
-No build tools or dependencies are required. Google Fonts are loaded online; the app itself works without them.
+## Technologies Used
 
-## Suggested improvements
-- Add task due dates and priority levels
-- Add edit-task functionality
-- Add dark mode
-- Add automated tests
+- HTML5
+- CSS3
+- JavaScript
+- LocalStorage
 
-## Portfolio description
-"Built Focus, a responsive task tracker using HTML, CSS and JavaScript. Implemented task creation, completion, deletion, filtering, live summary counters, and browser persistence with localStorage."
+## Project Structure
 
-## GitHub
-Create a new public repository named `focus-task-tracker`, upload these files, and add a screenshot of the running app to the README after testing it.
+- `index.html` – Application structure and layout.
+- `style.css` – Styling and responsive design.
+- `script.js` – Task management functionality and application interactions.
+
+## Live Demo
+
+[Open Focus Task Tracker](https://semiu25.github.io/focus-task-tracker/)
+
+## Repository
+
+This repository contains the source code for the Focus Task Tracker project.
