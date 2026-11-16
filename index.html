@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A clean, responsive task tracker built with HTML, CSS and JavaScript.">
+  <title>Focus — Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Focus home"><span class="brand-mark">F</span> focus<span class="brand-dot">.</span></a>
+      <span class="date" id="today"></span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">YOUR PERSONAL WORKSPACE</p>
+      <h1>Make today <span>count.</span></h1>
+      <p class="subtitle">A little progress every day adds up.</p>
+    </section>
+
+    <section class="summary" aria-label="Task summary">
+      <div class="summary-card"><span class="summary-number" id="totalCount">0</span><span class="summary-label">Total tasks</span></div>
+      <div class="summary-card"><span class="summary-number" id="activeCount">0</span><span class="summary-label">To do</span></div>
+      <div class="summary-card"><span class="summary-number" id="doneCount">0</span><span class="summary-label">Completed</span></div>
+    </section>
+
+    <section class="task-panel">
+      <div class="panel-heading">
+        <div><p class="eyebrow">STAY ON TRACK</p><h2>My tasks</h2></div>
+        <span class="task-date" id="shortDate"></span>
+      </div>
+
+      <form id="taskForm" class="task-form">
+        <label class="sr-only" for="taskInput">New task</label>
+        <input id="taskInput" type="text" maxlength="90" placeholder="What needs to get done?" autocomplete="off" required>
+        <button type="submit">Add task <span aria-hidden="true">+</span></button>
+      </form>
+
+      <div class="filters" role="group" aria-label="Filter tasks">
+        <button class="filter active" data-filter="all" type="button">All</button>
+        <button class="filter" data-filter="active" type="button">To do</button>
+        <button class="filter" data-filter="completed" type="button">Completed</button>
+        <button class="clear-button" id="clearCompleted" type="button">Clear completed</button>
+      </div>
+
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+      <div id="emptyState" class="empty-state">
+        <span class="empty-icon">✦</span>
+        <h3>Nothing here yet</h3>
+        <p>Add your first task and get the momentum going.</p>
+      </div>
+    </section>
+    <footer>Built with HTML, CSS &amp; JavaScript <span>·</span> Your tasks stay in this browser.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
